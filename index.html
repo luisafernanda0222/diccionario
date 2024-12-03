@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DICTIONARY</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>TRADUCTOR</h1>
+    </header>
+    <div class="container-father">
+    <div class="container">
+        <form   id="translator">
+            <label class="word" for="word-input">Palabra/Word</label><br>
+            <input class="word" type="text" id="word-input"  required><br>
+
+            <div class="language-options">
+                <label>
+                    <input type="radio" name="language" value="spanish"> Ingles a Español
+                </label>
+                <label>
+                    <input type="radio" name="language" value="english"> Español a Inglés
+                </label>
+            </div>
+            <button class="translate" type="button" id="translate-btn">Traducir/Translate</button>
+        </form>
+        <div class="response-area" id="response-area">Response/Respuesta</div>
+
+        <h3 class="categories1">Categorías</h3>
+        <div class="categories">
+            <label><input type="radio" name="category" value="animals"> Animales</label>
+            <label><input type="radio" name="category" value="fruits"> Frutas</label>
+            <label><input type="radio" name="category" value="colors"> Colores</label>
+            <label><input type="radio" name="category" value="physical_descriptions"> Descripciones</label>
+            <label><input type="radio" name="category" value="skills"> Habilidades</label>
+            <label><input type="radio" name="category" value="verbs"> Verbos</label>
+        </div>
+
+        <div class="words-area" id="words-area">Aquí irán la lista de palabras</div>
+
+    </div>
+    <div class="new-word-container">
+        <h3>AÑADIR NUEVA PALABRA</h3> <br>
+        <form id="new-word-form">
+            <label for="new-word-english">Palabra en Inglés:</label>
+            <input type="text" id="new-word-english" required>
+            
+            <label for="new-word-spanish">Traducción al Español:</label>
+            <input type="text" id="new-word-spanish" required>
+            
+            <label for="new-word-example">Ejemplo:</label>
+            <input type="text" id="new-word-example" required>
+            
+            <label for="new-word-category">Categoría:</label>
+            <select id="new-word-category" required>
+                <option value="animals">Animales</option>
+                <option value="fruits">Frutas</option>
+                <option value="colors">Colores</option>
+                <option value="physical_descriptions">Descripciones</option>
+                <option value="skills">Habilidades</option>
+                <option value="verbs">Verbos</option>
+            </select>
+            
+            <button type="submit" class="new-word-btn">Nueva Palabra</button>
+        </form>
+    </div>    
+</div>
+    <script src="app.js" type="module"></script>
+</body>
+</html>

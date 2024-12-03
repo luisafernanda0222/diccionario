@@ -1,0 +1,112 @@
+body {
+    background-color: #f4deff;
+}
+
+header {
+    background-color: #daffff;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+#h1 {
+    color: #f4deff;
+}
+.container-father{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 50px;
+    gap: 20px;
+}
+
+.container {
+    border-radius: 15px;
+    background-color:#daffff;
+    height: auto;
+    width: 600px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.word-input{
+    font-size: 17px;
+}
+
+.word-area{
+    width: 90%;
+    height: 30px;
+    margin: 13px;
+    margin-left: 30px;
+}
+
+.translate{
+    color: white;
+    background-color:#64d3b4;
+    width: 90%;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 17px;
+}
+
+.response-area{
+    width: 90%;
+    height: 38px;
+    margin-left: 30px;
+    margin-top: 15px;
+    background-color: #f4deff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+.categories1{
+    margin-top: 15px;
+}
+
+.categories{
+    margin: 25px;
+}
+
+.new-word-container {
+    border-radius: 15px;
+    background-color:#daffff;
+    height: auto;
+    width: 50px;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#new-word-form input,
+#new-word-form select {
+    width: 90%;
+    height: 30px;
+    margin: 13px;
+    margin-left: 30px;
+}
+
+.new-word-btn {
+    color: white;
+    background-color:#64d3b4;
+    width: 90%;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-left: 30px;
+    margin-top: 15px;
+    font-size: 17px;
+}
+.container, .new-word-container {
+    flex: 1;
+    max-width: 600px;
+    min-width: 300px;
+}
